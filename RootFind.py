@@ -76,28 +76,3 @@ def findRoot(f, a, b, eps, f_prime=0):
     x0  =  bisection(f, a, b, BISECTION_EPS)
     #Complete root finding with a quadratic rate of convergence
     return newtonsMethod(f, f_prime, x0, eps)
-
-
-
-
-
-
-'''EXAMPLE'''
-
-import math
-
-def g(x):
-    return math.cos(x) - x
-def g_prime(x):
-    return -1*math.sin(x) - 1
-
-print('\n___Root Finder -- EXAMPLE___\n')
-
-print("Bisection and Newton's:")
-alpha = findRoot(g, 0.5,1,10**-8, f_prime=g_prime)
-print(alpha)
-alpha = findRoot(g, 0.5,1,10**-8)
-print(alpha)
-print('\n')
-
-''''''
