@@ -7,10 +7,10 @@
     findRoot uses the bisection method to approach the root
     (up to 3 digit accuracy) then uses Newton's method to
     achieve the remaining degrees of accuracy. If the function's
-    derivative is not passed to findRoot, the function computes
-    the root entirely with bisection.
+    derivative is not passed to findRoot, the function finds
+    a root entirely with bisection.
 
-    However, if speed is a conecern, passing f_prime is recommended
+    However, if speed is a concern, passing f_prime is recommended
     because Newton's method has a quadratic rate of convergence
     while bisection has a linear rate of convergence.
 
